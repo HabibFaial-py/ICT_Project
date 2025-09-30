@@ -1,0 +1,73 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body gets the background image */
+body {
+    background-image: url(ishan-seefromthesky-LNdpi8Yzi34-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+    padding: 15px 30px; /* Fixed padding syntax */
+    border-radius: 16px;
+    margin: 30px auto;
+    max-width: 900px;
+    color: #fff;
+}
+
+/* Logo styles */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    padding-left: 20px;
+}
+.logo i {
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+/* Navlinks styles */
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navlinks li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+}
+
+.navlinks li a:hover {
+    color: #030b0b;
+}
+.navlinks li a i{
+    margin-right: 8px;
+}
+.navlinks li a i:hover{
+    color: #030b0b;
+}
+
+.logo:hover{
+    color: #030b0b;
+}
+.logo i:hover{
+    color: #030b0b;
+}
