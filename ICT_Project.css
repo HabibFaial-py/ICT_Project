@@ -12,6 +12,7 @@ body {
     background-position: center;
     background-size: cover;
     min-height: 100vh;
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 /* Navbar styles */
@@ -29,7 +30,7 @@ body {
 
 /* Logo styles */
 .logo {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: #fff;
     padding-left: 20px;
@@ -39,6 +40,8 @@ body {
     margin-right: 10px;
     vertical-align: middle;
     padding-right: 20px;
+    padding-top: 9px;
+    padding-left: 8px;
 }
 
 /* Navlinks styles */
@@ -51,7 +54,7 @@ body {
 .navlinks li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     transition: color 0.2s;
 }
 
@@ -70,4 +73,177 @@ body {
 }
 .logo i:hover{
     color: #030b0b;
+}
+/* Header styles */
+.header {
+    width: 100%;
+    /* max-width: 100vw; */
+    margin: 40px 0 0 0;
+    border-radius: 0;
+    background: rgba(197, 190, 190, 0.5); 
+    padding: 30px 0;
+    box-shadow: 0 4px 16px rgba(26, 9, 215, 0.15);
+    text-align: center;
+    color: black;
+    filter: saturate(10%);
+}
+
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.header h2  {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(29, 16, 211, 0.7);
+    text-size-adjust: auto;
+    color: #38008b;
+}
+.header p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.content h1{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff;    
+}
+.content p{
+    font-size: 0.75rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #aca1c2;
+    text-align: center;
+}
+section {
+    background: rgba(1, 1, 1, 0.8); /* semi-transparent white */
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 900px;
+}
+.explore-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box1 ,.box2 , .box3{
+    background-color: aquamarine;
+    padding: 20px;
+    margin: auto;
+    border-radius: 16px;
+    width: 33%;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.box1 p, .box2 p, .box3 p{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.box1 h4, .box2 h4, .box3 h4{
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+.box1 img, .box2 img, .box3 img , .box4 img{
+    display: block;
+    margin-bottom: 12px;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 16px;
+    display: block;
+    border-radius: 8px;
+}
+/* SERVICES */
+.Services{
+    background: rgba(127 , 255 , 212 , 0.4);
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 25px;
+}
+.Services h1{
+    font-size: 1.8rem;
+    text-align: center;
+}
+.Services p{
+    font-size: 0.75rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: center;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+.services-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.services-boxes .box1 ,.services-boxes .box2 , .services-boxes .box3, .services-boxes .box4{
+    background-color: rgb(1, 1, 1);
+    padding: 20px;
+    margin: auto;
+    border-radius: 16px;
+    width: 23%;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.Services .box1 p,  .Services .box2 p, .Services .box3 p, .Services .box4 p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.Services h4{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    
+}
+.services-boxes .box1 img,
+.services-boxes .box2 img,
+.services-boxes .box3 img,
+.services-boxes .box4 img {
+    width: 100%;
+    max-width: 120px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: block;
+}
+.services-boxes h4:hover{
+    color: yellow;
 }
