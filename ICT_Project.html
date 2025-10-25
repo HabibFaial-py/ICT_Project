@@ -30,8 +30,22 @@
         ✈️ Travel made simple and stress-free,<br>
         🏞️ Every journey, a new story,<br>
         ✨ Your adventure begins with us."</p>
+        <button onclick="openPopup( )">Sign Up To Get Started</button>
     </header>
-
+    <dialog class="overlay" id="bookingOverlay">
+        <div class="popup">
+            <form id="bookingForm">
+                <h3>Book Your Slot</h3>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="text" id="destination" name="destination" placeholder="Destination" required>
+                <div class="popup-actions">
+                    <button type="submit">Submit</button>
+                    <button type="button" onclick="closePopup()">Close</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
     <section class="content" id="about">
         <h1>EXPLORE</h1>
         <p>Discover the world with us! From breathtaking landscapes to vibrant cultures, we bring you closer to the destinations you've always dreamed of. Whether you're seeking adventure, relaxation, or cultural immersion, our curated travel experiences are designed to create unforgettable memories. Let us guide you on a journey of exploration and wonder.</p>

@@ -1,7 +1,4 @@
-// Wait until the page is fully loaded
 window.onload = function() {
-
-  // 1️⃣ Change header color when clicked
   const header = document.querySelector("h1");
   if (header) {
     header.addEventListener("click", function() {
@@ -9,18 +6,24 @@ window.onload = function() {
       alert("You clicked the header! 🌍");
     });
   }
-
-  // 2️⃣ Show a welcome message when the page opens
   alert("Welcome to Travel Along! ✈️ Explore the world with us.");
-
-  // 3️⃣ Simple hover effect for logo
-  const logo = document.querySelector(".logo");
-  if (logo) {
-    logo.addEventListener("mouseenter", function() {
-      logo.style.color = "aqua";
-    });
-    logo.addEventListener("mouseleave", function() {
-      logo.style.color = "white";
-    });
-  }
 };
+
+function openPopup(){
+  document.getElementById("bookingOverlay").style.display="flex";
+}
+function closePopup(){
+  document.getElementById("bookingOverlay").style.display="none";
+}
+
+function submitForm(){
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const destination = document.getElementById("destination").value;
+    if (name === "" || email === "" || destination === "") {
+        alert("Please fill in all fields before submitting the form.");
+    } else {
+      alert(`Thank you, ${name}! Your booking to ${destination} has been received. We will contact you at ${email}. ✈️`);
+      closePopup();
+    }
+}
