@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT_Project - Travel Along</title>
+
+    <!-- Font Awesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="ICT_Project.js"></script>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="ICT_Project.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><i class="fa-solid fa-globe"></i>Travel Along</div>
+        <ul class="navlinks">
+            <li><a href="#home"> <i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-user"></i>About</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-address-book"></i>Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="header" id="home">
+        <h1>Welcome</h1>
+        <h2 class="heading2a">TRAVEL BEYOND BOUNDARIES</h2>
+        <h2 class="heading2b">TRAVEL BEYOND EXPECTATIONS</h2>
+        <p>🌍 "Explore beyond boundaries,<br>
+        ✈️ Travel made simple and stress-free,<br>
+        🏞️ Every journey, a new story,<br>
+        ✨ Your adventure begins with us."</p>
+        <button onclick="openPopup( )">Sign Up To Get Started</button>
+    </header>
+    <dialog class="overlay" id="bookingOverlay">
+        <div class="popup">
+            <form id="bookingForm">
+                <h3>Book Your Slot</h3>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="text" id="destination" name="destination" placeholder="Destination" required>
+                <div class="popup-actions">
+                    <button type="submit">Submit</button>
+                    <button type="button" onclick="closePopup()">Close</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+    <section class="content" id="about">
+        <h1>EXPLORE</h1>
+        <p>Discover the world with us! From breathtaking landscapes to vibrant cultures, we bring you closer to the destinations you've always dreamed of. Whether you're seeking adventure, relaxation, or cultural immersion, our curated travel experiences are designed to create unforgettable memories. Let us guide you on a journey of exploration and wonder.</p>
+        
+        <div class="explore-boxes">
+            <div class="box1">
+                <h4>UAE</h4>
+                <img src="https://i.postimg.cc/4NCBLdKv/jeff_tumale_rbd_QHqcu_yo_unsplash.jpg" alt="BURJ KHALIFA">
+                <p>✨ Where modern skylines meet golden deserts,<br>
+                🌟 Experience luxury, adventure, and timeless culture.</p>
+            </div>
+            <div class="box2">
+                <h4>MALAYSIA</h4>
+                <img src="https://i.postimg.cc/k5hyxX3v/yaopey_yong_L0Ei_Ih_EQ794_unsplash.jpg" alt="PETRONAS TOWERS">
+                <p>🌴 A land of vibrant cultures and tropical beauty,<br>
+                🍜 Truly Asia, where every journey feels like home.</p>
+            </div>
+            <div class="box3">
+                <h4>SINGAPORE</h4>
+                <img src="https://i.postimg.cc/K8ff8D9y/pang_yuhao_Ejvakn_MYDDs_unsplash.jpg" alt="SINGAPORE">
+                <p>🌆 A city of gardens, lights, and innovation,<br>
+                🥢 Where tradition and modernity live in harmony.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="Services">
+        <h1>SERVICES</h1>
+        <p>At Travel Along, we offer a range of services to make your travel experience seamless and enjoyable. From personalized itinerary planning to 24/7 customer support, we are dedicated to ensuring that every aspect of your journey is taken care of. Our services include flight and accommodation bookings, guided tours, travel insurance, and more. Let us handle the details while you focus on creating unforgettable memories.</p>
+        
+        <div class="services-boxes">
+            <div class="box1">
+                <h4>FLIGHT BOOKING</h4>
+                <img src="https://i.postimg.cc/kgssgvTY/sidharth_sabu_Pwc9Lu_YVFr0_unsplash.jpg" alt="FLIGHT BOOKING">
+                <p>✈️ Seamless flight bookings to your dream destinations,<br>
+                🌍 Connecting you to the world with ease and convenience.</p>
+            </div>
+            <div class="box2">
+                <h4>HOTEL BOOKING</h4>
+                <img src="https://i.postimg.cc/sBQQcrW0/bilderboken-rlwE8f8anOc-unsplash.jpg" alt="HOTEL RESERVATION">
+                <p>🏨 Comfortable stays in top-rated hotels,<br>
+                🛎️ Ensuring a relaxing and memorable experience wherever you go.</p>
+            </div>
+            <div class="box3">
+                <h4>TOUR PACKAGES</h4>
+                <img src="https://i.postimg.cc/Cx77xsct/vaida_tamosauskaite_o_Jof_V8d_Zd_w_unsplash.jpg" alt="TOUR PACKAGES">
+                <p>🌐 Curated tour packages for every type of traveler,<br>
+                🗺️ Explore new cultures, landscapes, and adventures with ease.</p>
+            </div>
+            <div class="box4">
+                <h4>VISA SERVICES</h4>
+                <img src="https://i.postimg.cc/fRCCRfHz/global_residence_index_LPda_W746WAw_unsplash.jpg" alt="VISA SERVICES">
+                <p>🛂 Hassle-free visa services for smooth travel,<br>
+                🌏 Making your journey stress-free from start to finish.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h1>Testimonials</h1>
+        <div id="test-span">
+            <p>🌟 "Travel Along made our vacation unforgettable! From start to finish, their service was impeccable. Highly recommend!" - Sarah L.</p>
+            <p>🌟 "The tour packages offered were diverse and well-organized. We experienced so much in such a short time!" - Mark D.</p>
+            <p>🌟 "Booking our flights and hotels was a breeze with Travel Along. Their customer support was top-notch!" - Emily R.</p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2023 Travel Along. All rights reserved.</p>
+    </footer>
+</body>
+</html>
