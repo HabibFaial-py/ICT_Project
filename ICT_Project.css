@@ -1,3 +1,4 @@
+// Habib Faisal
 * {
     box-sizing: border-box;
     margin: 0;
@@ -123,7 +124,7 @@ body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     color: #e0f7fa;
 }
-
+// Hafsa Mukarram
 /* Content Section */
 .content, .Services {
     background: rgba(0, 0, 0, 0.8);
@@ -233,7 +234,7 @@ body {
 .box1 img:hover, .box2 img:hover, .box3 img:hover, .services-boxes .box1 img:hover, .services-boxes .box2 img:hover, .services-boxes .box3 img:hover, .services-boxes .box4 img:hover {
     transform: scale(1.05);
 }
-
+// Muhammad arif 
 /* Testimonials Section */
 #testimonials {
     background: rgba(0, 0, 0, 0.8);
@@ -403,5 +404,6 @@ dialog[open] {
 dialog.overlay::backdrop {
     background: rgba(0,0,0,0.6);
 }
+
 
 
